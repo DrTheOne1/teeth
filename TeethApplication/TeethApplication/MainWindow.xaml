@@ -1,0 +1,14 @@
+﻿<Window x:Class="TeethApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeethApplication"
+        mc:Ignorable="d"
+        Title="TeethApplication" Height="450" Width="800">
+    <Grid>
+        <Button Name="ButtonShowPatients" Content="Visa patienter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="255,50,0,0" Height="50" Click="ButtonShowPatients_Click"/>
+        <Button Name="ButtonBookTime" Content="Boka tid" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="50
+                ,50,0,0" Height="50" Click="ButtonBookTime_Click" />
+    </Grid>
+</Window>
