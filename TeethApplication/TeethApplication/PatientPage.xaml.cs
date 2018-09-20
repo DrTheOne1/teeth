@@ -20,7 +20,7 @@ namespace TeethApplication
     /// </summary>
     public partial class PatientPage : Page
     {
-        
+
         public PatientPage()
         {
             InitializeComponent();
@@ -46,10 +46,6 @@ namespace TeethApplication
             });
 
             PatientList.ItemsSource = patient;
-
-
-
-
         }
 
 

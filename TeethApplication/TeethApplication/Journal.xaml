@@ -6,10 +6,10 @@
       xmlns:local="clr-namespace:TeethApplication"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Journal">
+      Title="Journal"
+      Background="SpringGreen">
 
     <Grid>
-        <WebBrowser x:Name="JounalPage" HorizontalAlignment="Left" Height="440" Margin="0,10,0,-0.4" VerticalAlignment="Top" Width="790"/>
         <Label Content="Journal" HorizontalAlignment="Left" Margin="45,46,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Height="54" Width="134"/>
         <TextBox HorizontalAlignment="Left" Height="321" Margin="45,100,0,0" TextWrapping="Wrap" Text="2018-05-04&#xD;&#xA;Tandläkarbesök&#xD;&#xA;&#xD;&#xA;2018-06-12&#xD;&#xA;Tandläkarbesök&#xD;&#xA;Röntgade tänder" VerticalAlignment="Top" Width="350"/>
     </Grid>
