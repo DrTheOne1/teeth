@@ -49,15 +49,22 @@ namespace TeethApplication
             this.mainFrame.Navigate(bookingPage);
 
         }
+
         private void ButtonLogout_Click(object sender, RoutedEventArgs e)
         {
             Login login = new Login();
             login.Show();
             this.Close();
         }
+
         public void ChangePage(Page page)
         {
             this.mainFrame.Navigate(page);
+        }
+
+        private void mainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }

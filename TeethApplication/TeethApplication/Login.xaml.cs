@@ -30,8 +30,8 @@ namespace TeethApplication
 
             if (username  == "user")
             {
-                MainWindow main = new MainWindow(username);
-                main.Show();
+                OverTooth.mainWindow = new MainWindow(username);
+                OverTooth.mainWindow.Show();
                 this.Close();
             }
             else if (username == "admin")

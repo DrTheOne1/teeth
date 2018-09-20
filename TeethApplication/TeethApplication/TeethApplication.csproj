@@ -140,6 +140,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OverTooth.cs" />
     <Compile Include="PatientJournal.xaml.cs">
       <DependentUpon>PatientJournal.xaml</DependentUpon>
     </Compile>
@@ -177,6 +178,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fig6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fig7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fig8.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

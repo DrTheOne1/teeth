@@ -10,9 +10,9 @@
       Background="AliceBlue">
 
     <Grid>
-        <Button x:Name="ButtonReturnToMain" Content="Tillbaka till startsidan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="582,359,0,0" Height="50" Click="ButtonReturnToMain_Click" />
-        <ListBox x:Name="PatientList" ScrollViewer.HorizontalScrollBarVisibility="Disabled" DockPanel.Dock="Top" Visibility="Visible" HorizontalAlignment="Stretch" Margin="30,80,38.6,145" VerticalAlignment="Stretch" UseLayoutRounding="False" BorderThickness="1,1,1,1" FontFamily="Consolas" FontSize="14" SelectionChanged="PatientList_SelectionChanged">
-            <ListBox.ItemTemplate>
+        <Button x:Name="ButtonReturnToMain" Content="Tillbaka till startsidan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="582,359,0,0" Height="50" />
+            <ListBox x:Name="PatientList" ScrollViewer.HorizontalScrollBarVisibility="Disabled" DockPanel.Dock="Top" Visibility="Visible" HorizontalAlignment="Stretch" Margin="30,80,38.6,145" VerticalAlignment="Stretch" UseLayoutRounding="False" BorderThickness="1,1,1,1" FontFamily="Consolas" FontSize="14" SelectionChanged="PatientList_SelectionChanged">
+                <ListBox.ItemTemplate>
                 <DataTemplate>
 
                     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
