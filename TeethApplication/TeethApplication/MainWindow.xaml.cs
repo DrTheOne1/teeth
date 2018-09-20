@@ -59,5 +59,10 @@ namespace TeethApplication
         {
             this.mainFrame.Navigate(page);
         }
+
+        private void mainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

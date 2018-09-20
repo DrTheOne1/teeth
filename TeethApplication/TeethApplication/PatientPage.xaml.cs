@@ -52,21 +52,10 @@ namespace TeethApplication
 
         }
 
-        private void ButtonReturnToMain_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-
-
-        }
 
         private void PatientList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            OverTooth.mainWindow.mainFrame.Navigate(new Journal());
         }
     }
 }
