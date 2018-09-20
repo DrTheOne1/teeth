@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Administration" Height="327" Width="636">
     <Grid>
-        <Button x:Name="ButtonUsers" Content="Skapa ny användare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,10,0,0" Height="50" Click="ButtonUsers_Click" />
+        <Button x:Name="ButtonCreateNewUser" Content="Skapa ny användare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,10,0,0" Height="50" Click="ButtonCreateNewUser_Click" />
         
         <Button x:Name="ButtonLogout" Content="Logga ut" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Margin="418,236,0,0" Height="50" Click="ButtonLogout_Click" />
         <Frame Name="mainFrame" Margin="10,65,10,60" NavigationUIVisibility="Hidden"/>
