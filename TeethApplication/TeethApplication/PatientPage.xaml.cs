@@ -20,7 +20,7 @@ namespace TeethApplication
     /// </summary>
     public partial class PatientPage : Page
     {
-        
+
         public PatientPage()
         {
             InitializeComponent();
@@ -46,27 +46,12 @@ namespace TeethApplication
             });
 
             PatientList.ItemsSource = patient;
-
-
-
-
-        }
-
-        private void ButtonReturnToMain_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-
-
         }
 
         private void PatientList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            Page journal = new Journal();
+            new MainWindow.mainFrame.Navigate(journal);
         }
     }
 }
