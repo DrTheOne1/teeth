@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="Booking" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="372*"/>
+        </Grid.ColumnDefinitions>
+
     </Grid>
 </Window>
