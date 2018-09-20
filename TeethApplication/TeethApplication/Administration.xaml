@@ -1,0 +1,13 @@
+﻿<Window x:Class="TeethApplication.Administration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeethApplication"
+        mc:Ignorable="d"
+        Title="Administration" Height="327" Width="636">
+    <Grid>
+        <Button x:Name="ButtonCreateNewUser" Content="Skapa ny användare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="50,50,0,0" Height="50" Click="ButtonCreateNewUser_Click" />
+        <Button x:Name="ButtonLogout" Content="Logga ut" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="418,236,0,0" Height="50" Click="ButtonLogout_Click" />
+    </Grid>
+</Window>

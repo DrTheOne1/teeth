@@ -40,5 +40,11 @@ namespace TeethApplication
             this.Visibility = Visibility.Collapsed;
 
         }
+        private void ButtonLogout_Click(object sender, RoutedEventArgs e)
+        { }
+        public void ChangePage(Page page)
+        {
+            this.mainFrame.Navigate(page);
+        }
     }
 }

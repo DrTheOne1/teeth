@@ -31,6 +31,10 @@ namespace TeethApplication
 
             mainWindow.Visibility = Visibility.Visible;
             this.Visibility = Visibility.Collapsed;
+            Page mainPage = new MainPage();
+            
+            
+            
         }
     }
 }

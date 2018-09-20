@@ -26,9 +26,20 @@ namespace TeethApplication
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
-            this.Close();
+            string username = TextBoxUsername.Text.ToString();
+
+            if (username  == "user")
+            {
+                MainWindow main = new MainWindow();
+                main.Show();
+                this.Close();
+            }
+            else if (username == "admin")
+            {
+                Administration administration = new Administration();
+                administration.Show();
+                this.Close();
+            }
         }
     }
 }
