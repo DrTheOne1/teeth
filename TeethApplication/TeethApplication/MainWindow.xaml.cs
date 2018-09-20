@@ -23,8 +23,8 @@ namespace TeethApplication
         public MainWindow()
         {
             InitializeComponent();
-            Page patientPage = new PatientPage();
-            this.mainFrame.Navigate(patientPage);
+            MainPage mainPage = new MainPage();
+            this.mainFrame.Navigate(mainPage);
         }
 
         private void ButtonShowPatients_Click(object sender, RoutedEventArgs e)
