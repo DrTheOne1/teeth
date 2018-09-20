@@ -16,29 +16,21 @@ using System.Windows.Shapes;
 namespace TeethApplication
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PatientPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PatientPage : Page
     {
-        public MainWindow()
+        public PatientPage()
         {
             InitializeComponent();
-            Page patientPage = new PatientPage();
-            this.mainFrame.Navigate(patientPage);
         }
 
-        private void ButtonShowPatients_Click(object sender, RoutedEventArgs e)
+        private void ButtonReturnToMain_Click(object sender, RoutedEventArgs e)
         {
-            Page patientPage = new PatientPage();
-            this.mainFrame.Navigate(patientPage);
-        }
+            MainWindow mainWindow = new MainWindow();
 
-        private void ButtonBookTime_Click(object sender, RoutedEventArgs e)
-        {
-            Booking booking = new Booking();
-            booking.Visibility = Visibility.Visible;
+            mainWindow.Visibility = Visibility.Visible;
             this.Visibility = Visibility.Collapsed;
-
         }
     }
 }
