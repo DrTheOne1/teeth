@@ -7,8 +7,12 @@
         mc:Ignorable="d"
         Title="Patient" Height="450" Width="800">
     <Grid>
-        <Button x:Name="ButtonReturnToMain" Content="Tillbaka till startsidan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="582,359,0,0" Height="50" Click="ButtonReturnToMain_Click" />
-        <ListBox x:Name="PatientList" ScrollViewer.HorizontalScrollBarVisibility="Disabled" DockPanel.Dock="Top" Visibility="Visible" HorizontalAlignment="Stretch" Margin="30,80,38.6,145" VerticalAlignment="Stretch" UseLayoutRounding="False" BorderThickness="1,1,1,1" FontFamily="Consolas" FontSize="14" SelectionChanged="PatientList_SelectionChanged">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="525*"/>
+            <ColumnDefinition Width="269*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ButtonReturnToMain" Content="Tillbaka till startsidan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="57,359,0,0" Height="50" Click="ButtonReturnToMain_Click" Grid.Column="1" />
+        <ListBox x:Name="PatientList" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Visibility="Visible" HorizontalAlignment="Stretch" Margin="30,80,53.6,145" VerticalAlignment="Stretch" UseLayoutRounding="False" BorderThickness="1,1,1,1" FontFamily="Consolas" FontSize="14" SelectionChanged="PatientList_SelectionChanged" Grid.ColumnSpan="2">
             <ListBox.ItemTemplate>
                 <DataTemplate>
 
@@ -46,9 +50,9 @@
                         <TextBlock Grid.Row="1" Grid.Column="0">
                                 <Run Text="" />
                         </TextBlock>
-           
 
-                      
+
+
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
