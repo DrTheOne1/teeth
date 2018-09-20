@@ -140,6 +140,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OverTooth.cs" />
     <Compile Include="PatientJournal.xaml.cs">
       <DependentUpon>PatientJournal.xaml</DependentUpon>
     </Compile>
