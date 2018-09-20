@@ -7,9 +7,51 @@
         mc:Ignorable="d"
         Title="Patient" Height="450" Width="800">
     <Grid>
-        
         <Button x:Name="ButtonReturnToMain" Content="Tillbaka till startsidan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="582,359,0,0" Height="50" Click="ButtonReturnToMain_Click" />
-        
+        <ListBox x:Name="PatientList" ScrollViewer.HorizontalScrollBarVisibility="Disabled" DockPanel.Dock="Top" Visibility="Visible" HorizontalAlignment="Stretch" Margin="30,80,38.6,145" VerticalAlignment="Stretch" UseLayoutRounding="False" BorderThickness="1,1,1,1" FontFamily="Consolas" FontSize="14" SelectionChanged="PatientList_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
 
+                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100px" />
+                            <ColumnDefinition Width="100px" />
+                            <ColumnDefinition Width="100px" />
+                            <ColumnDefinition Width="150px" />
+                            <ColumnDefinition Width="150px" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" >
+                                <Run Text="{Binding FirstName}" />
+                        </TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="1"> 
+                                <Run Text="{Binding LastName}" />
+                        </TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2">
+                                <Run Text="{Binding BirthDate}" />
+                        </TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="3">
+                                <Run Text="{Binding Address}" />
+
+                        </TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="4">
+                                <Run Text="{Binding PhoneNumber}" />
+
+                        </TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0">
+                                <Run Text="" />
+                        </TextBlock>
+           
+
+                      
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
