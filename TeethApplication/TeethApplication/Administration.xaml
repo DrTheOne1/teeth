@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeethApplication"
         mc:Ignorable="d"
-        Title="Administration" Height="450" Width="800">
+        Title="Administration" Height="327" Width="636">
     <Grid>
-        
+        <Button x:Name="ButtonCreateNewUser" Content="Skapa ny användare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="50,50,0,0" Height="50" Click="ButtonCreateNewUser_Click" />
+        <Button x:Name="ButtonLogout" Content="Logga ut" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="418,236,0,0" Height="50" Click="ButtonLogout_Click" />
     </Grid>
 </Window>

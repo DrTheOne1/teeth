@@ -39,5 +39,13 @@ namespace TeethApplication
             this.Visibility = Visibility.Collapsed;
 
         }
+
+        private void ButtonLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+
+            login.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
+        }
     }
 }

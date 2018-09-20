@@ -58,6 +58,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Administration_NewUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Booking.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -72,6 +76,9 @@
     </Page>
     <Compile Include="Administration.xaml.cs">
       <DependentUpon>Administration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administration_NewUser.xaml.cs">
+      <DependentUpon>Administration_NewUser.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>

@@ -23,5 +23,13 @@ namespace TeethApplication
         {
             InitializeComponent();
         }
+
+        private void ButtonReturnToMain_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+
+            mainWindow.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
+        }
     }
 }

@@ -15,28 +15,28 @@ using System.Windows.Shapes;
 namespace TeethApplication
 {
     /// <summary>
-    /// Interaction logic for Administration.xaml
+    /// Interaction logic for Administration_NewUser.xaml
     /// </summary>
-    public partial class Administration : Window
+    public partial class Administration_NewUser : Window
     {
-        public Administration()
+        public Administration_NewUser()
         {
             InitializeComponent();
         }
 
-        private void ButtonCreateNewUser_Click(object sender, RoutedEventArgs e)
+        private void ButtonNewUser_Click(object sender, RoutedEventArgs e)
         {
-            Administration_NewUser administration_newUser = new Administration_NewUser();
+            Administration administration = new Administration();
 
-            administration_newUser.Visibility = Visibility.Visible;
+            administration.Visibility = Visibility.Visible;
             this.Visibility = Visibility.Collapsed;
         }
 
-        private void ButtonLogout_Click(object sender, RoutedEventArgs e)
+        private void ButtonAbort_Click(object sender, RoutedEventArgs e)
         {
-            Login login = new Login();
+            Administration administration = new Administration();
 
-            login.Visibility = Visibility.Visible;
+            administration.Visibility = Visibility.Visible;
             this.Visibility = Visibility.Collapsed;
         }
     }
