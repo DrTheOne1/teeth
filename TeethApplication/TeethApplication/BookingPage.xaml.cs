@@ -24,5 +24,12 @@ namespace TeethApplication
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            LabelView.Content = TextBoxName.Text;
+            LabelViewPn.Content = TextBoxPn.Text;
+            LabelViewCalendar.Content = TextBoxBooking.Text;
+        }
     }
 }
