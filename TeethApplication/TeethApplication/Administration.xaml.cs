@@ -22,6 +22,8 @@ namespace TeethApplication
         public Administration()
         {
             InitializeComponent();
+            Page adminPage = new AdminPage();
+            this.mainFrame.Navigate(adminPage);
         }
 
         private void ButtonCreateNewUser_Click(object sender, RoutedEventArgs e)
@@ -29,7 +31,7 @@ namespace TeethApplication
             Administration_NewUser administration_newUser = new Administration_NewUser();
 
             administration_newUser.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            
         }
 
         private void ButtonLogout_Click(object sender, RoutedEventArgs e)
@@ -38,6 +40,11 @@ namespace TeethApplication
 
             login.Visibility = Visibility.Visible;
             this.Visibility = Visibility.Collapsed;
+        }
+
+        private void ButtonUsers_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

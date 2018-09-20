@@ -20,21 +20,53 @@ namespace TeethApplication
     /// </summary>
     public partial class PatientPage : Page
     {
+        
         public PatientPage()
         {
             InitializeComponent();
+
+
+            List<Person> patient = new List<Person>();
+            patient.Add(new Person()
+            {
+                FirstName = "Kyle",
+                LastName = "Me",
+                BirthDate = "881022-1100",
+                Address = "St.2, Mölndal",
+                PhoneNumber = "082-1928372"
+            });
+
+            patient.Add(new Person()
+            {
+                FirstName = "Lily",
+                LastName = "Kent",
+                BirthDate = "440122-1340",
+                Address = "Pilgatan 2, Göteborg",
+                PhoneNumber = "032-1235372"
+            });
+
+            PatientList.ItemsSource = patient;
+
+
+
+
         }
 
         private void ButtonReturnToMain_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
 
-            mainWindow.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
-            Page mainPage = new MainPage();
-            
-            
-            
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+
+
+        }
+
+        private void PatientList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
