@@ -10,7 +10,7 @@
 
         <Button Name="ButtonShowPatients" Content="Visa patienter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="215,10,0,0" Height="50" Click="ButtonShowPatients_Click"/>
         <Button Name="ButtonBookTime" Content="Boka tid" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,10,0,0" Height="50" Click="ButtonBookTime_Click" />
-         <Button x:Name="ButtonLogout" Content="Logga ut" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="582,359,0,0" Height="50" Click="ButtonLogout_Click" />
+         <Button x:Name="ButtonLogout" Content="Logga ut" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Margin="0,0,10,10" Height="50" Click="ButtonLogout_Click" />
         <Frame Name="mainFrame" Margin="10,65,10,60" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

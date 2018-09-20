@@ -26,6 +26,16 @@ namespace TeethApplication
             MainPage mainPage = new MainPage();
             this.mainFrame.Navigate(mainPage);
         }
+        public MainWindow(string username)
+        {
+            InitializeComponent();
+            if (username == "user")
+            {
+                MainPage mainPage = new MainPage();
+                this.mainFrame.Navigate(mainPage);
+            }
+            else { }
+        }
 
         private void ButtonShowPatients_Click(object sender, RoutedEventArgs e)
         {
@@ -35,13 +45,16 @@ namespace TeethApplication
 
         private void ButtonBookTime_Click(object sender, RoutedEventArgs e)
         {
-            Booking booking = new Booking();
-            booking.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            Page bookingPage = new BookingPage();
+            this.mainFrame.Navigate(bookingPage);
 
         }
         private void ButtonLogout_Click(object sender, RoutedEventArgs e)
-        { }
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
         public void ChangePage(Page page)
         {
             this.mainFrame.Navigate(page);

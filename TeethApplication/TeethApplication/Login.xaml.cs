@@ -30,7 +30,7 @@ namespace TeethApplication
 
             if (username  == "user")
             {
-                MainWindow main = new MainWindow();
+                MainWindow main = new MainWindow(username);
                 main.Show();
                 this.Close();
             }
