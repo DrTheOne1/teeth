@@ -9,8 +9,8 @@
     <Grid>
         <Label Content="Användarnamn" HorizontalAlignment="Left" Height="30" Margin="36,35,0,0" VerticalAlignment="Top" Width="191"/>
         <Label Content="Lösenord" HorizontalAlignment="Left" Height="30" Margin="36,70,0,0" VerticalAlignment="Top" Width="191"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="232,35,0,0" TextWrapping="Wrap" Text="user" VerticalAlignment="Top" Width="224" />
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="232,70,0,0" TextWrapping="Wrap" Text="********" VerticalAlignment="Top" Width="224"/>
+        <TextBox Name="TextBoxUsername" HorizontalAlignment="Left" Height="30" Margin="232,35,0,0" TextWrapping="Wrap" Text="user" VerticalAlignment="Top" Width="224" />
+        <TextBox Name="TextBoxPassword" HorizontalAlignment="Left" Height="30" Margin="232,70,0,0" TextWrapping="Wrap" Text="********" VerticalAlignment="Top" Width="224"/>
         <Button Content="Logga in" HorizontalAlignment="Left" Height="30" Margin="232,105,0,0" VerticalAlignment="Top" Width="224" Click="Button_Click"/>
     </Grid>
 </Window>
