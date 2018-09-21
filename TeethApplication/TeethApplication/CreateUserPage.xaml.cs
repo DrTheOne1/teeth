@@ -10,26 +10,28 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TeethApplication
 {
     /// <summary>
-    /// Interaction logic for Booking.xaml
+    /// Interaction logic for CreateUserPage.xaml
     /// </summary>
-    public partial class Booking : Window
+    public partial class CreateUserPage : Page
     {
-        public Booking()
+        public CreateUserPage()
         {
             InitializeComponent();
         }
-
-        private void ButtonReturnToMain_Click(object sender, RoutedEventArgs e)
+        private void ButtonNewUser_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
+            
+        }
 
-            mainWindow.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+        private void ButtonAbort_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
