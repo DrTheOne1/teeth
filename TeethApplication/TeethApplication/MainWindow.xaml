@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeethApplication"
         mc:Ignorable="d"
-        Title="TeethApplication" Height="450" Width="800">
+        Title="TeethApplication" Height="800" Width="1200">
     <Grid>
 
         <Button Name="ButtonShowPatients" Content="Visa patienter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="215,10,0,0" Height="50" Click="ButtonShowPatients_Click"/>
