@@ -74,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CreateUserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Journal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -108,6 +112,9 @@
     </Compile>
     <Compile Include="BookingPage.xaml.cs">
       <DependentUpon>BookingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUserPage.xaml.cs">
+      <DependentUpon>CreateUserPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Journal.xaml.cs">
       <DependentUpon>Journal.xaml</DependentUpon>
@@ -145,6 +152,7 @@
       <DependentUpon>PatientJournal.xaml</DependentUpon>
     </Compile>
     <Compile Include="Person.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="UserListPage.xaml.cs">
       <DependentUpon>UserListPage.xaml</DependentUpon>
     </Compile>

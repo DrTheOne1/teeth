@@ -10,6 +10,50 @@
       Background="LightGoldenrodYellow">
 
     <Grid>
-        <Button x:Name="ButtonCreateNewUser" Content="Skapa ny användare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,10,0,0" Height="50" Click="ButtonCreateNewUser_Click" />
+       
+        <ListBox x:Name="UsersList" ScrollViewer.HorizontalScrollBarVisibility="Disabled" DockPanel.Dock="Top" Visibility="Visible" HorizontalAlignment="Stretch" Margin="30,80,38.6,30.204" VerticalAlignment="Stretch" UseLayoutRounding="False" BorderThickness="1,1,1,1" FontFamily="Consolas" FontSize="14">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+
+                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50px" />
+                            <ColumnDefinition Width="100px" />
+                            <ColumnDefinition Width="100px" />
+                            <ColumnDefinition Width="100px" />
+                            <ColumnDefinition Width="300px" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" >
+                                <Run Text="{Binding Id}" />
+                        </TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="1"> 
+                                <Run Text="{Binding FirstName}" />
+                        </TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2">
+                                <Run Text="{Binding LastName}" />
+                        </TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="3">
+                                <Run Text="{Binding UserName}" />
+                        </TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="4">
+                                <Run Text="{Binding Email}" />
+
+                        </TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0">
+                                <Run Text="" />
+                        </TextBlock>
+
+
+
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Page>

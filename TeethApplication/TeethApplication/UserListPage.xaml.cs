@@ -23,6 +23,19 @@ namespace TeethApplication
         public UserListPage()
         {
             InitializeComponent();
+
+            List<User> users = new List<User>();
+            users.Add(new User("Arnold", "Agustus", "Admin", "legit.mail@NoScam.se", "*****", 1));
+            users.Add(new User("Billy", "Bob", "User", "bill.bob@fakeMail.com", "*****", 2));
+
+            UsersList.ItemsSource = users;
+        }
+
+
+
+        private void PatientList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            OverTooth.mainWindow.mainFrame.Navigate(new Journal());
         }
 
         private void ButtonCreateNewUser_Click(object sender, RoutedEventArgs e)

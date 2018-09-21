@@ -22,15 +22,30 @@ namespace TeethApplication
         public Administration()
         {
             InitializeComponent();
-            Page adminPage = new AdminPage();
-            this.mainFrame.Navigate(adminPage);
+            //Page adminPage = new AdminPage();
+            //this.mainFrame.Navigate(adminPage);
+
+            Page userlistPage = new UserListPage();
+            this.mainFrame.Navigate(userlistPage);
         }
 
         private void ButtonCreateNewUser_Click(object sender, RoutedEventArgs e)
-        {
-            Administration_NewUser administration_newUser = new Administration_NewUser();
 
-            administration_newUser.Visibility = Visibility.Visible;
+        {
+
+            Page newUserPage = new CreateUserPage();
+            this.mainFrame.Navigate(newUserPage);
+     
+         
+        }
+        private void ButtonUserList_Click(object sender, RoutedEventArgs e)
+
+        {
+
+            Page userListPage = new UserListPage();
+            this.mainFrame.Navigate(userListPage);
+
+
         }
 
         private void ButtonLogout_Click(object sender, RoutedEventArgs e)

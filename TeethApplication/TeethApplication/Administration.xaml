@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeethApplication"
         mc:Ignorable="d"
-        Title="Administration" Height="327" Width="636">
+        Title="Administration" Height="450" Width="800">
     <Grid>
-        <Button x:Name="ButtonCreateNewUser" Content="Skapa ny användare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,10,0,0" Height="50" Click="ButtonCreateNewUser_Click" />
-        
+        <Button x:Name="UserList" Content="Användarlista" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,10,0,0" Height="50" Click="ButtonUserList_Click" />
+        <Button x:Name="ButtonCreateNewUser" Content="Skapa ny användare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="215,10,0,0" Height="50" Click="ButtonCreateNewUser_Click" />
+
         <Button x:Name="ButtonLogout" Content="Logga ut" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Margin="418,236,0,0" Height="50" Click="ButtonLogout_Click" />
         <Frame Name="mainFrame" Margin="10,65,10,60" NavigationUIVisibility="Hidden"/>
     </Grid>
