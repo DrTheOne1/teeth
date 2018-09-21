@@ -58,15 +58,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Administration_NewUser.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="AdminPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Booking.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -97,18 +89,12 @@
     <Compile Include="Administration.xaml.cs">
       <DependentUpon>Administration.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Administration_NewUser.xaml.cs">
-      <DependentUpon>Administration_NewUser.xaml</DependentUpon>
-    </Compile>
     <Compile Include="AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Booking.xaml.cs">
-      <DependentUpon>Booking.xaml</DependentUpon>
     </Compile>
     <Compile Include="BookingPage.xaml.cs">
       <DependentUpon>BookingPage.xaml</DependentUpon>
@@ -129,15 +115,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PatientJournal.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UserListPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Patient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -148,16 +126,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OverTooth.cs" />
-    <Compile Include="PatientJournal.xaml.cs">
-      <DependentUpon>PatientJournal.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserListPage.xaml.cs">
       <DependentUpon>UserListPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Patient.xaml.cs">
-      <DependentUpon>Patient.xaml</DependentUpon>
     </Compile>
     <Compile Include="PatientPage.xaml.cs">
       <DependentUpon>PatientPage.xaml</DependentUpon>
