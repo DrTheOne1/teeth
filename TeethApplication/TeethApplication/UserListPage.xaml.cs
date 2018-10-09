@@ -28,7 +28,8 @@ namespace TeethApplication
             users.Add(new User("Arnold", "Agustus", "Admin", "legit.mail@NoScam.se", "*****", 1));
             users.Add(new User("Billy", "Bob", "User", "bill.bob@fakeMail.com", "*****", 2));
             users.Add(new User("Jasna", "Nilsson", "Admin", "legit1.mail@NoScam.se", "*****", 1));
-            users.Add(new User("Johanna", "Persson", "User", "johanna.persson@fakeMail.com", "*****", 2)); 
+            users.Add(new User("Johanna", "Persson", "User", "johanna.persson@fakeMail.com", "*****", 2));
+            users.Add(new User("Henrik", "Dag", "User", "henrik.dag@fakeMail.com", "*****", 2));
             UsersList.ItemsSource = users;
         }
 
